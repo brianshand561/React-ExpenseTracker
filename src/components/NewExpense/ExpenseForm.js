@@ -36,7 +36,7 @@ function ExpenseForm(props) {
         event.preventDefault(); // prevents page reload
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate)
         };
         props.onSaveExpenseData(expenseData); // pass data up to parent component
